@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C088528B-E137-4D8B-8B5A-5980061D90FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_Base_de_Datos</RootNamespace>
+    <AssemblyName>Project Base de Datos</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarAsistente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarAsistente.Designer.cs">
+      <DependentUpon>IngresarAsistente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarAtencion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarAtencion.Designer.cs">
+      <DependentUpon>IngresarAtencion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarConsultorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarConsultorio.Designer.cs">
+      <DependentUpon>IngresarConsultorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarDetalleMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarDetalleMedicamento.Designer.cs">
+      <DependentUpon>IngresarDetalleMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarDiagnostico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarDiagnostico.Designer.cs">
+      <DependentUpon>IngresarDiagnostico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarEquipo.Designer.cs">
+      <DependentUpon>IngresarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarExamen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarExamen.Designer.cs">
+      <DependentUpon>IngresarExamen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarIndicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarIndicaciones.Designer.cs">
+      <DependentUpon>IngresarIndicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarInmobiliaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarInmobiliaria.Designer.cs">
+      <DependentUpon>IngresarInmobiliaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarInstrumentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarInstrumentos.Designer.cs">
+      <DependentUpon>IngresarInstrumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarMedicamento.Designer.cs">
+      <DependentUpon>IngresarMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarMedico.Designer.cs">
+      <DependentUpon>IngresarMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarOrden.Designer.cs">
+      <DependentUpon>IngresarOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarPaciente.Designer.cs">
+      <DependentUpon>IngresarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarReceta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarReceta.Designer.cs">
+      <DependentUpon>IngresarReceta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL.cs" />
+    <Compile Include="VBuscarAsistente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBuscarAsistente.Designer.cs">
+      <DependentUpon>VBuscarAsistente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VBuscarAtencion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBuscarAtencion.Designer.cs">
+      <DependentUpon>VBuscarAtencion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VBuscarConsultorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBuscarConsultorio.Designer.cs">
+      <DependentUpon>VBuscarConsultorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VBuscarDetalleMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBuscarDetalleMedicamento.Designer.cs">
+      <DependentUpon>VBuscarDetalleMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VBuscarDiagnostico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBuscarDiagnostico.Designer.cs">
+      <DependentUpon>VBuscarDiagnostico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VBuscarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBuscarEquipo.Designer.cs">
+      <DependentUpon>VBuscarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VBuscarExamen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBuscarExamen.Designer.cs">
+      <DependentUpon>VBuscarExamen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VBuscarIndicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBuscarIndicaciones.Designer.cs">
+      <DependentUpon>VBuscarIndicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VBuscarInmobiliaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBuscarInmobiliaria.Designer.cs">
+      <DependentUpon>VBuscarInmobiliaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VBuscarInstrumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBuscarInstrumento.Designer.cs">
+      <DependentUpon>VBuscarInstrumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VBuscarMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBuscarMedicamentos.Designer.cs">
+      <DependentUpon>VBuscarMedicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VBuscarMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBuscarMedico.Designer.cs">
+      <DependentUpon>VBuscarMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VBuscarOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBuscarOrden.Designer.cs">
+      <DependentUpon>VBuscarOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VBuscarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBuscarPaciente.Designer.cs">
+      <DependentUpon>VBuscarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VBuscarReceta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBuscarReceta.Designer.cs">
+      <DependentUpon>VBuscarReceta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VConsultarProcedimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VConsultarProcedimiento.Designer.cs">
+      <DependentUpon>VConsultarProcedimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VMenúPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VMenúPrincipal.Designer.cs">
+      <DependentUpon>VMenúPrincipal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarAsistente.resx">
+      <DependentUpon>IngresarAsistente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarAtencion.resx">
+      <DependentUpon>IngresarAtencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarConsultorio.resx">
+      <DependentUpon>IngresarConsultorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarDetalleMedicamento.resx">
+      <DependentUpon>IngresarDetalleMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarDiagnostico.resx">
+      <DependentUpon>IngresarDiagnostico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarEquipo.resx">
+      <DependentUpon>IngresarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarExamen.resx">
+      <DependentUpon>IngresarExamen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarIndicaciones.resx">
+      <DependentUpon>IngresarIndicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarInmobiliaria.resx">
+      <DependentUpon>IngresarInmobiliaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarInstrumentos.resx">
+      <DependentUpon>IngresarInstrumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarMedicamento.resx">
+      <DependentUpon>IngresarMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarMedico.resx">
+      <DependentUpon>IngresarMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarOrden.resx">
+      <DependentUpon>IngresarOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarPaciente.resx">
+      <DependentUpon>IngresarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarReceta.resx">
+      <DependentUpon>IngresarReceta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VBuscarAsistente.resx">
+      <DependentUpon>VBuscarAsistente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBuscarAtencion.resx">
+      <DependentUpon>VBuscarAtencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBuscarConsultorio.resx">
+      <DependentUpon>VBuscarConsultorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBuscarDetalleMedicamento.resx">
+      <DependentUpon>VBuscarDetalleMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBuscarDiagnostico.resx">
+      <DependentUpon>VBuscarDiagnostico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBuscarEquipo.resx">
+      <DependentUpon>VBuscarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBuscarExamen.resx">
+      <DependentUpon>VBuscarExamen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBuscarIndicaciones.resx">
+      <DependentUpon>VBuscarIndicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBuscarInmobiliaria.resx">
+      <DependentUpon>VBuscarInmobiliaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBuscarInstrumento.resx">
+      <DependentUpon>VBuscarInstrumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBuscarMedicamentos.resx">
+      <DependentUpon>VBuscarMedicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBuscarMedico.resx">
+      <DependentUpon>VBuscarMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBuscarOrden.resx">
+      <DependentUpon>VBuscarOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBuscarPaciente.resx">
+      <DependentUpon>VBuscarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBuscarReceta.resx">
+      <DependentUpon>VBuscarReceta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VConsultarProcedimiento.resx">
+      <DependentUpon>VConsultarProcedimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VMenúPrincipal.resx">
+      <DependentUpon>VMenúPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

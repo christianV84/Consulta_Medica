@@ -1,0 +1,212 @@
+﻿namespace Project_Base_de_Datos
+{
+    partial class VBuscarOrden
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.btnEscogerIdOrden = new System.Windows.Forms.Button();
+            this.cbxEscogerOrden = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnRegresarMenuPrincipal4 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgvDatosOrden = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnNombreOrden = new System.Windows.Forms.Button();
+            this.txtNombreOrden = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatosOrden)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // btnEscogerIdOrden
+            // 
+            this.btnEscogerIdOrden.Location = new System.Drawing.Point(366, 91);
+            this.btnEscogerIdOrden.Name = "btnEscogerIdOrden";
+            this.btnEscogerIdOrden.Size = new System.Drawing.Size(279, 21);
+            this.btnEscogerIdOrden.TabIndex = 19;
+            this.btnEscogerIdOrden.Text = "Procesar Orden";
+            this.btnEscogerIdOrden.UseVisualStyleBackColor = true;
+            this.btnEscogerIdOrden.Click += new System.EventHandler(this.btnEscogerIdOrden_Click);
+            // 
+            // cbxEscogerOrden
+            // 
+            this.cbxEscogerOrden.FormattingEnabled = true;
+            this.cbxEscogerOrden.Items.AddRange(new object[] {
+            "6985",
+            "4529",
+            "1785",
+            "7325",
+            "3485"});
+            this.cbxEscogerOrden.Location = new System.Drawing.Point(203, 92);
+            this.cbxEscogerOrden.Name = "cbxEscogerOrden";
+            this.cbxEscogerOrden.Size = new System.Drawing.Size(134, 21);
+            this.cbxEscogerOrden.TabIndex = 18;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnRegresarMenuPrincipal4);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.ForeColor = System.Drawing.Color.Cyan;
+            this.panel1.Location = new System.Drawing.Point(2, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(761, 66);
+            this.panel1.TabIndex = 17;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(410, 17);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(172, 35);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Ingresar Datos Nuevo";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseEnter += new System.EventHandler(this.btnMouseEnter);
+            this.button1.MouseLeave += new System.EventHandler(this.btnMouseLeave);
+            // 
+            // btnRegresarMenuPrincipal4
+            // 
+            this.btnRegresarMenuPrincipal4.FlatAppearance.BorderSize = 0;
+            this.btnRegresarMenuPrincipal4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresarMenuPrincipal4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresarMenuPrincipal4.ForeColor = System.Drawing.Color.White;
+            this.btnRegresarMenuPrincipal4.Location = new System.Drawing.Point(576, 17);
+            this.btnRegresarMenuPrincipal4.Name = "btnRegresarMenuPrincipal4";
+            this.btnRegresarMenuPrincipal4.Size = new System.Drawing.Size(172, 35);
+            this.btnRegresarMenuPrincipal4.TabIndex = 7;
+            this.btnRegresarMenuPrincipal4.Text = "Regresar Menu Principal";
+            this.btnRegresarMenuPrincipal4.UseVisualStyleBackColor = true;
+            this.btnRegresarMenuPrincipal4.Click += new System.EventHandler(this.btnRegresarMenuPrincipal4_Click);
+            this.btnRegresarMenuPrincipal4.MouseEnter += new System.EventHandler(this.btnMouseEnter);
+            this.btnRegresarMenuPrincipal4.MouseLeave += new System.EventHandler(this.btnMouseLeave);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(9, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(261, 42);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Buscar Orden";
+            // 
+            // dgvDatosOrden
+            // 
+            this.dgvDatosOrden.AllowUserToAddRows = false;
+            this.dgvDatosOrden.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatosOrden.Location = new System.Drawing.Point(8, 167);
+            this.dgvDatosOrden.MultiSelect = false;
+            this.dgvDatosOrden.Name = "dgvDatosOrden";
+            this.dgvDatosOrden.ReadOnly = true;
+            this.dgvDatosOrden.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDatosOrden.Size = new System.Drawing.Size(745, 156);
+            this.dgvDatosOrden.TabIndex = 16;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(11, 91);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(176, 24);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Escoger Id Orden";
+            // 
+            // btnNombreOrden
+            // 
+            this.btnNombreOrden.Location = new System.Drawing.Point(366, 126);
+            this.btnNombreOrden.Name = "btnNombreOrden";
+            this.btnNombreOrden.Size = new System.Drawing.Size(279, 23);
+            this.btnNombreOrden.TabIndex = 26;
+            this.btnNombreOrden.Text = "Procesar Id Orden";
+            this.btnNombreOrden.UseVisualStyleBackColor = true;
+            this.btnNombreOrden.Click += new System.EventHandler(this.btnNombreOrden_Click);
+            // 
+            // txtNombreOrden
+            // 
+            this.txtNombreOrden.Location = new System.Drawing.Point(203, 128);
+            this.txtNombreOrden.Name = "txtNombreOrden";
+            this.txtNombreOrden.Size = new System.Drawing.Size(138, 20);
+            this.txtNombreOrden.TabIndex = 25;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(14, 126);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(174, 24);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Ingresar Id Orden";
+            // 
+            // VBuscarOrden
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(761, 334);
+            this.Controls.Add(this.btnNombreOrden);
+            this.Controls.Add(this.txtNombreOrden);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnEscogerIdOrden);
+            this.Controls.Add(this.cbxEscogerOrden);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dgvDatosOrden);
+            this.Controls.Add(this.label2);
+            this.Name = "VBuscarOrden";
+            this.Text = "VBuscarOrden";
+            this.Load += new System.EventHandler(this.VBuscarOrden_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatosOrden)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button btnEscogerIdOrden;
+        private System.Windows.Forms.ComboBox cbxEscogerOrden;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnRegresarMenuPrincipal4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvDatosOrden;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnNombreOrden;
+        private System.Windows.Forms.TextBox txtNombreOrden;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
+    }
+}
